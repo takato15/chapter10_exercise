@@ -12,7 +12,7 @@ header {
 main {
   width: 960px;
   margin: 50px auto;
-  display: inline-block;
+  display: flex;
 }
 
 .step-box {
@@ -66,23 +66,16 @@ footer {
   background-color: #aaa;
 }
 
-@media screen and (max-width: 425px) {
-  header {
-    width: 100%;
-  }
-
+@media screen and (max-width: 768px) {
   main {
+    display: block;
     width: 100%;
   }
 
   .step-box {
     width: 90%;
+    margin-bottom: 20px;
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 20px;
-  }
-
-  .footer {
-    width: 100%;
   }
 }
